@@ -24,7 +24,7 @@ int zPointB = Convert.ToInt32(Console.ReadLine());
 double distance = Distance(xPointA, yPointA, zPointA, xPointB, yPointB, zPointB);
 Console.WriteLine($"Расстояние между точками равно: {Math.Round(distance, 2, MidpointRounding.ToZero)}");
 
-double Distance(int xA, int yA, int xB, int yB, int zA, int zB)
+double Distance(int xA, int yA, int zA, int xB, int yB, int zB)
 {
     return Math.Sqrt(Math.Pow(xA-xB, 2)+Math.Pow(yA-yB, 2)+Math.Pow(zA-zB, 2));
 }
